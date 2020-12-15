@@ -545,6 +545,15 @@ def portilla():
 
 def start():
     global vaikeustaso
+    print('\n\n')
+    print('#    # ####### ######  #     # #######    #       #    #     # #     # ')
+    print('#   #  #       #     # #     # #     #   # #     # #   ##   ## #     # ')
+    print('#  #   #       #     # #     # #     #  #   #   #   #  # # # # #     # ')
+    print('###    #####   ######  ####### #     # #     # #     # #  #  # #     # ')
+    print('#  #   #       #   #   #     # #     # ####### ####### #     # #     # ')
+    print('#   #  #       #    #  #     # #     # #     # #     # #     # #     # ')
+    print('#    # ####### #     # #     # ####### #     # #     # #     #  #####  ')
+    print('\n\n')
     print("Tervetuloa pelaamaan 'Kerhoaamu' -peliä. Ensimmäisenä valitaan int(vaikeustaso).")
     print("Millainen aamu tänään on?")
     def ekavalinta():
@@ -570,10 +579,10 @@ def start():
                     input('Paina mitä tahansa jatkaaksesi.')
                     break
                 elif vaikeustaso == 3:
-                    kello = 60
+                    kello = 45
                     print("Heräät karmivaan kirkunaan! Nielet sydäntäsi suustasi samalla kun yrität rauhoittaa sekä lastasi, että itseäsi.")
                     print('"What a day", ajattelet kun verta viimein riittää aivoihisi. Katsot kelloa ja mietit miksi sydämesi syke kiihtyy jälleen.')
-                    print('Ymmärrys hiipii sinuun moukarin lailla: Aikaa kerhon alkuun on puoli tuntia!')
+                    print('Ymmärrys hiipii sinuun moukarin lailla: Aikaa kerhon alkuun on kolme varttia!')
                     aika(kello)
                     input('Paina mitä tahansa jatkaaksesi.')
                     break
@@ -581,7 +590,7 @@ def start():
                 print("kirjoita numero 1-3.")
         
     ekavalinta()
-    print(vaikeustaso)
+#    print(vaikeustaso)
     valinta()
 
 start()    
